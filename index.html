@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пироженки Macaroons</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="logo header__logo">
+            <img src="images/logo.png" alt="Логотип">
+        </div>
+        <div class="burger" id="burger">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40px" height="22px">
+                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                      d="M0.0,0.0 L39.999,0.0 L39.999,1.999 L0.0,1.999 L0.0,0.0 Z"/>
+                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                      d="M0.0,10.0 L39.999,10.0 L39.999,12.0 L0.0,12.0 L0.0,10.0 Z"/>
+                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                      d="M0.0,19.999 L39.999,19.999 L39.999,21.999 L0.0,21.999 L0.0,19.999 Z"/>
+            </svg>
+        </div>
+        <nav class="menu" id="menu">
+            <div class="close">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#products" class="menu__link">Пироженки</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#order" class="menu__link">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="phone header__phone">
+            <a class="phone__link" href="tel:+375 (29) 368-98-68">+375 (29) 368-98-68</a>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container main__container">
+        <div class="main__info">
+            <h1 class="main__title">
+                Мягкие французские пироженки Macaroons
+            </h1>
+            <div class="main__description">
+                Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
+            </div>
+            <div class="main__action">
+                <button class="button main__button">Выбрать макарун</button>
+            </div>
+        </div>
+        <div class="main__image">
+            <img class="main__image-img" src="images/macaroons-box.png" alt="Коробка пирожных macaroons">
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container about__container">
+        <div class="about__info">
+            <h2 class="about__title">Мы печём для вас вкуснейшие макаруны уже более 10 лет</h2>
+            <div class="about__description">Все пироженки мы готовим только из натуральных и качественных продуктов, без
+                консервантов, ароматизаторов, красителей. Используем в приготовлении сливочное масло 82,5%, без дрожжей,
+                маргарина, разрыхлителей и улучшителей муки.
+            </div>
+        </div>
+        <div class="about__image">
+            <img src="images/macaroon-big.png" alt="Macaroon" class="about__img">
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container features__container">
+        <div class="features__item">
+            <div class="features__number">
+                <span class="features__text">1</span>
+            </div>
+            <div class="features__title">Лучшие продукты</div>
+            <div class="features__description">
+                Мы честно готовим макаруны только из натуральных и качественных продуктов. Мы не используем консерванты,
+                ароматизаторы и красители.
+            </div>
+        </div>
+        <div class="features__item">
+            <div class="features__number">
+                <span class="features__text">2</span>
+            </div>
+            <div class="features__title">Много вкусов</div>
+            <div class="features__description">
+                Наша задача – предоставить вам широкое разнообразие вкусов. Вы удивитесь, но у нас более 70 вкусов пироженок.
+            </div>
+        </div>
+        <div class="features__item">
+            <div class="features__number">
+                <span class="features__text">3</span>
+            </div>
+            <div class="features__title">Бисквитное тесто</div>
+            <div class="features__description">
+                Все пирожные готовятся на бисквитном тесте с качественным сливочным маслом 82,5%. В составе нет маргарина и дрожжей!
+            </div>
+        </div>
+        <div class="features__item">
+            <div class="features__number">
+                <span class="features__text">4</span>
+            </div>
+            <div class="features__title">Честный продукт</div>
+            <div class="features__description">
+                Вкус, качество и безопасность наших пирогов подтверждена декларацией о соответствии, которую мы получили 22.06.2016&nbsp;г.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="products__title">Выберите свой макарун</h2>
+        <div class="products__items">
+            <div class="product">
+                <img src="images/1.png" alt="Макарун с малиной" class="product__img">
+                <div class="product__name">Макарун с малиной</div>
+                <div class="product__order">
+                    <div class="product__price">
+                        <div class="product__piece">1 шт.</div>
+                        <div class="product__value">1,70 руб.</div>
+                    </div>
+                    <div class="product__action">
+                        <button class="button product__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/2.png" alt="Макарун с манго" class="product__img">
+                <div class="product__name">Макарун с манго</div>
+                <div class="product__order">
+                    <div class="product__price">
+                        <div class="product__piece">1 шт.</div>
+                        <div class="product__value">1,70 руб.</div>
+                    </div>
+                    <div class="product__action">
+                        <button class="button product__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/3.png" alt="Пирог с ванилью" class="product__img">
+                <div class="product__name">Пирог с ванилью</div>
+                <div class="product__order">
+                    <div class="product__price">
+                        <div class="product__piece">1 шт.</div>
+                        <div class="product__value">1,70 руб.</div>
+                    </div>
+                    <div class="product__action">
+                        <button class="button product__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/4.png" alt="Пирог с фисташками" class="product__img">
+                <div class="product__name">Пирог с фисташками</div>
+                <div class="product__order">
+                    <div class="product__price">
+                        <div class="product__piece">1 шт.</div>
+                        <div class="product__value">1,70 руб.</div>
+                    </div>
+                    <div class="product__action">
+                        <button class="button product__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order" id="order">
+    <div class="container order__container">
+        <img src="images/strawberry.png" alt="Клубника на фоне" class="fly-image fly-image_big">
+        <img src="images/strawberry-small.png" alt="Клубника на фоне" class="fly-image fly-image_small">
+        <div class="order__content">
+            <div class="order__image">
+                <img src="images/macaroons.png" alt="Macaroons" class="order__img">
+            </div>
+            <div class="order__content-form">
+                <h2 class="order__title">Закажите макарун!</h2>
+                <div class="order__subtitle">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!</div>
+                <div class="order__form">
+                    <div class="order__input-title">Ваш выбор</div>
+                    <input type="text" name="value" class="order__input first-input" placeholder="Напишите, что хотите заказать...">
+                    <div class="order__input-title">Заполните данные для заказа</div>
+                    <input type="text" name="name" class="order__input" placeholder="Ваше имя">
+                    <input type="text" name="phone" class="order__input" placeholder="+375 (__) ___ - __ - __">
+                    <button class="button order__button">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__info">
+            <div class="footer__logo">
+                <img src="images/logo.png" alt="Логотип">
+            </div>
+            <div class="footer__socials">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="footer__insta-icon">
+                    <span class="footer__socials-text">Мы в Instagram</span>
+                </a>
+            </div>
+            <div class="phone footer__phone">
+                <a class="phone__link" href="tel:+375 (29) 368-98-68">+375 (29) 368-98-68</a>
+            </div>
+        </div>
+        <div class="rights">
+            Все права защищены, 2020
+        </div>
+    </div>
+</footer>
+
+<div class="present">
+    <img src="images/present.png" alt="Подарок" class="present__img">
+    <div class="present__offer">
+        Оформите заказ и&nbsp;получите подарок!
+    </div>
+</div>
+
+<script>
+    document.getElementById('burger').onclick = function () {
+        document.getElementById('menu').classList.add('open');
+    }
+
+    document.querySelectorAll('#menu *').forEach((item) => {
+        item.onclick = () => {
+            document.getElementById('menu').classList.remove('open');
+        }
+    })
+</script>
+
+</body>
+</html>
