@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Пироженки Macaroons</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="dist/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -17,13 +16,12 @@
         <div class="burger" id="burger">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="40px" height="22px">
-                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                <path fill-rule="evenodd" fill="rgb(130, 19, 40)"
                       d="M0.0,0.0 L39.999,0.0 L39.999,1.999 L0.0,1.999 L0.0,0.0 Z"/>
-                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                <path fill-rule="evenodd" fill="rgb(130, 19, 40)"
                       d="M0.0,10.0 L39.999,10.0 L39.999,12.0 L0.0,12.0 L0.0,10.0 Z"/>
-                <path fill-rule="evenodd"  fill="rgb(130, 19, 40)"
+                <path fill-rule="evenodd" fill="rgb(130, 19, 40)"
                       d="M0.0,19.999 L39.999,19.999 L39.999,21.999 L0.0,21.999 L0.0,19.999 Z"/>
             </svg>
         </div>
@@ -73,7 +71,7 @@
                 Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
             </div>
             <div class="main__action">
-                <button class="button main__button">Выбрать макарун</button>
+                <button id="choose-macaroon" class="button main__button">Выбрать макарун</button>
             </div>
         </div>
         <div class="main__image">
@@ -115,7 +113,8 @@
             </div>
             <div class="features__title">Много вкусов</div>
             <div class="features__description">
-                Наша задача – предоставить вам широкое разнообразие вкусов. Вы удивитесь, но у нас более 70 вкусов пироженок.
+                Наша задача – предоставить вам широкое разнообразие вкусов. Вы удивитесь, но у нас более 70 вкусов
+                пироженок.
             </div>
         </div>
         <div class="features__item">
@@ -124,7 +123,8 @@
             </div>
             <div class="features__title">Бисквитное тесто</div>
             <div class="features__description">
-                Все пирожные готовятся на бисквитном тесте с качественным сливочным маслом 82,5%. В составе нет маргарина и дрожжей!
+                Все пирожные готовятся на бисквитном тесте с качественным сливочным маслом 82,5%. В составе нет
+                маргарина и дрожжей!
             </div>
         </div>
         <div class="features__item">
@@ -133,7 +133,8 @@
             </div>
             <div class="features__title">Честный продукт</div>
             <div class="features__description">
-                Вкус, качество и безопасность наших пирогов подтверждена декларацией о соответствии, которую мы получили 22.06.2016&nbsp;г.
+                Вкус, качество и безопасность наших пирогов подтверждена декларацией о соответствии, которую мы получили
+                22.06.2016&nbsp;г.
             </div>
         </div>
     </div>
@@ -209,16 +210,31 @@
             </div>
             <div class="order__content-form">
                 <h2 class="order__title">Закажите макарун!</h2>
-                <div class="order__subtitle">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!</div>
-                <div class="order__form">
-                    <div class="order__input-title">Ваш выбор</div>
-                    <input type="text" name="value" class="order__input first-input" placeholder="Напишите, что хотите заказать...">
-                    <div class="order__input-title">Заполните данные для заказа</div>
-                    <input type="text" name="name" class="order__input" placeholder="Ваше имя">
-                    <input type="text" name="phone" class="order__input" placeholder="+375 (__) ___ - __ - __">
-                    <button class="button order__button">Оформить заказ</button>
+                <div class="order__subtitle">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
+                    пекаря!
                 </div>
+                <form action="" class="order__form">
+                    <div class="order__input-title">Ваш выбор</div>
+                    <div class="order__form-input first-input">
+                        <input type="text" name="value" class="order__input" id="product"
+                               placeholder="Напишите, что хотите заказать...">
+                        <div class="error-message">Необходимо ввести название продукта</div>
+                    </div>
+                    <div class="order__input-title">Заполните данные для заказа</div>
+                    <div class="order__form-input">
+                        <input type="text" name="name" class="order__input" id="name" placeholder="Ваше имя">
+                        <div class="error-message">Необходимо ввести имя</div>
+                    </div>
+                    <div class="order__form-input">
+                        <input type="tel" name="phone" class="order__input" id="phone"
+                               placeholder="+375 (__) ___ - __ - __">
+                        <div class="error-message">Необходимо ввести номер телефона</div>
+                    </div>
+                    <button type="button" class="button order__button" id="submit">Оформить заказ</button>
+                </form>
+
             </div>
+            <h2 id="form-success" class="order__title form-success">Спасибо за Ваш заказ. Мы скоро свяжемся с Вами!</h2>
         </div>
     </div>
 </section>
@@ -231,7 +247,21 @@
             </div>
             <div class="footer__socials">
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="images/instagram.png" alt="Instagram" class="footer__insta-icon">
+                    <svg class="footer__insta-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" width="512"
+                         height="512" x="0" y="0"
+                         viewBox="0 0 512.00096 512.00096" style="enable-background:new 0 0 512 512"
+                         xml:space="preserve"><g>
+                        <path xmlns="http://www.w3.org/2000/svg"
+                              d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"
+                              data-original="#000000" class=""></path><path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"
+                            data-original="#000000" class=""></path>
+                        <path
+                                xmlns="http://www.w3.org/2000/svg"
+                                d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"
+                                data-original="#000000" class=""></path>
+                    </g></svg>
                     <span class="footer__socials-text">Мы в Instagram</span>
                 </a>
             </div>
@@ -252,17 +282,12 @@
     </div>
 </div>
 
-<script>
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('menu').classList.add('open');
-    }
+<div class="loader">
+    <div class="lds-dual-ring"></div>
+</div>
 
-    document.querySelectorAll('#menu *').forEach((item) => {
-        item.onclick = () => {
-            document.getElementById('menu').classList.remove('open');
-        }
-    })
-</script>
-
+<script src="src/scripts/jquery.min.js"></script>
+<script src="src/scripts/jquery.mask.min.js"></script>
+<script src="src/scripts/script.js"></script>
 </body>
 </html>
